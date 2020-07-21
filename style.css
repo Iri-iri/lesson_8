@@ -52,13 +52,13 @@
 
 .header {
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   display: flex;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/axit.png");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/axit.png");
   background-repeat: no-repeat;
   background-size: cover;
-
 }
 
 .title {
@@ -381,8 +381,8 @@ button:hover {
   border-bottom: 1px solid #ff8b38;
 }
 
-.free-trial__input:focus~.free-trial__label,
-.free-trial__input:valid~.free-trial__label {
+.free-trial__input:focus ~ .free-trial__label,
+.free-trial__input:valid ~ .free-trial__label {
   font-size: 0.7rem;
   color: #ff8b38;
   left: 12%;
@@ -402,11 +402,13 @@ button:hover {
 .sending-button:hover {
   cursor: pointer;
   color: #ff8b38;
-  background: linear-gradient(to bottom,
-      rgba(255, 255, 255, 1) 0%,
-      rgba(241, 241, 241, 1) 17%,
-      rgba(225, 225, 225, 1) 68%,
-      rgba(246, 246, 246, 1) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(241, 241, 241, 1) 17%,
+    rgba(225, 225, 225, 1) 68%,
+    rgba(246, 246, 246, 1) 100%
+  );
   font-weight: bold;
 }
 
@@ -465,16 +467,16 @@ button:hover {
   left: 3%;
 }
 
-.free-trial__input:focus~.contact-panel__form-label,
-.free-trial__input:valid~.contact-panel__form-label {
+.free-trial__input:focus ~ .contact-panel__form-label,
+.free-trial__input:valid ~ .contact-panel__form-label {
   font-size: 0.7rem;
   color: #ff8b38;
   top: -18%;
   left: -1%;
 }
 
-.free-trial__input:focus~.contact-panel__form-message-label,
-.free-trial__input:valid~.contact-panel__form-message-label {
+.free-trial__input:focus ~ .contact-panel__form-message-label,
+.free-trial__input:valid ~ .contact-panel__form-message-label {
   font-size: 0.7rem;
   color: #ff8b38;
   top: -5%;
@@ -572,9 +574,25 @@ footer {
     flex: 1;
     text-align: center;
   }
-}
 
-@media all and (max-width: 750px) {
+  .header {
+    height: auto;
+  }
+
+  .content-info_w-40 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .line_margin-2 {
+    margin: 2rem auto;
+  }
+
+  .social-media__info {
+    width: 100%;
+    text-align: center;
+  }
+
   .card {
     flex-wrap: wrap;
   }
@@ -585,9 +603,7 @@ footer {
     margin: 0 auto;
     padding-bottom: 20px;
   }
-}
 
-@media all and (max-width: 750px) {
   .rates {
     flex-wrap: wrap;
   }
