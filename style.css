@@ -614,4 +614,17 @@ footer {
     margin: 0 auto;
     padding-bottom: 20px;
   }
+
+  .social__icons {
+    flex: 1;
+  }
+
+  .input-form {
+    width: 100%;
+  }
+
+  
+  .input-form__item-wrapper_w_47p {
+    width: 100%;
+  }
 }
