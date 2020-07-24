@@ -616,7 +616,7 @@ footer {
   }
 
   .social__icons {
-    flex: 1;
+    justify-content: center;
   }
 
   .input-form {
