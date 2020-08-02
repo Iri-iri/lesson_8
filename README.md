@@ -1,1 +1,1 @@
-# lesson_8-adaptive
+https://iri-iri.github.io/lesson_8/
